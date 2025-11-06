@@ -31,8 +31,7 @@ npm run preview
 ```
 
 Deploy
-- Push to GitHub and deploy with Vercel / Netlify (standard Vite static deploy).
+- Push to GitHub 
 
 Notes
 - This is a frontend-only demo — no real transactions are executed.
-- Provider logo URLs are public images and placeholders where necessary.
