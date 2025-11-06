@@ -6,6 +6,7 @@ import { CartSidebar } from "@/components/CartSidebar";
 import { CheckoutModal } from "@/components/CheckoutModal";
 import { toast } from "sonner";
 import { ShoppingCart } from "lucide-react";
+import Logo from "@/Assets/products/Logo.png";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -52,11 +53,14 @@ const Index = () => {
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-[hsl(210,90%,50%)] bg-clip-text text-transparent">
-                VukaPay Demo
-              </h1>
-              <p className="text-sm text-muted-foreground">Payment Demo Store</p>
+            <div className="flex items-center gap-3">
+              <img src={Logo} alt="VukaPay logo" className="h-10 w-10 rounded-md object-contain shadow-sm bg-white/50" />
+              <div>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-[hsl(210,90%,50%)] bg-clip-text text-transparent">
+                  VukaPay Demo
+                </h1>
+                <p className="text-sm text-muted-foreground">Payment Demo Store</p>
+              </div>
             </div>
             <div className="flex items-center gap-4">
               <Button
